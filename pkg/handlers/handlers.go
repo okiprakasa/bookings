@@ -1,18 +1,11 @@
 package handlers
 
 import (
+	"github.com/okiprakasa/hello-world/models"
 	"github.com/okiprakasa/hello-world/pkg/config"
 	"github.com/okiprakasa/hello-world/pkg/render"
 	"net/http"
 )
-
-type TemplateData struct {
-	StringMap map[string]string
-	IntMap    map[string]int
-	FloatMap  map[string]float32
-	DataMap   map[string]interface{}
-	CSFRToken string //CSFRToken Cross Site Request Forgery Token (Security token for forms)
-}
 
 var Repo *Repository
 
@@ -37,11 +30,17 @@ func NewHandlers(r *Repository) {
 func (m *Repository) Home(w http.ResponseWriter, _ *http.Request) {
 	//files := []string{"base.layout", "home.page"}
 	//render.T(w, nil, files...)
-	render.Template(w, "home.page.tmpl")
+	render.Template(w, "home.page.tmpl", &models.TemplateData{})
 }
 
 func (m *Repository) About(w http.ResponseWriter, _ *http.Request) {
 	//files := []string{"base.layout", "about.page"}
 	//render.T(w, nil, files...)
-	render.Template(w, "about.page.tmpl")
+	// Perform some logic
+	stringMap := make(map[string]string)
+	stringMap["test"] = "Hello, again."
+	// Send the data to the template
+	render.Template(w, "about.page.tmpl", &models.TemplateData{
+		StringMap: stringMap,
+	})
 }

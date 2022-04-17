@@ -3,6 +3,7 @@ package render
 import (
 	"bytes"
 	"fmt"
+	"github.com/okiprakasa/hello-world/models"
 	"github.com/okiprakasa/hello-world/pkg/config"
 	"html/template"
 	"log"
@@ -20,8 +21,13 @@ func TemplatePointer(a *config.AppConfig, err error) {
 	tcError = err
 }
 
+func AddTemplateData(td *models.TemplateData) *models.TemplateData {
+
+	return td
+}
+
 //Template renders template from bytes buff of template cache
-func Template(w http.ResponseWriter, tmpl string) {
+func Template(w http.ResponseWriter, tmpl string, td *models.TemplateData) {
 	var tc map[string]*template.Template
 	if app.UseCache {
 		//Get the template cache from the AppConfig (Production Mode)
@@ -38,8 +44,10 @@ func Template(w http.ResponseWriter, tmpl string) {
 
 	templates := template.Must(t, tcError)
 
+	td = AddTemplateData(td)
+
 	buf := new(bytes.Buffer)
-	_ = templates.Execute(buf, nil)
+	_ = templates.Execute(buf, td)
 
 	_, err := buf.WriteTo(w)
 	if err != nil {
