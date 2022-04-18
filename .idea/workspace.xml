@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2acedbe4-896f-44f9-96ff-ccf7641908d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="2acedbe4-896f-44f9-96ff-ccf7641908d2" name="Changes" comment="Add Readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +66,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Readme.md" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
