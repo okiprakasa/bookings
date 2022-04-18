@@ -29,7 +29,7 @@ func AddTemplateData(td *models.TemplateData) *models.TemplateData {
 //Template renders template from bytes buff of template cache
 func Template(w http.ResponseWriter, tmpl string, td *models.TemplateData) {
 	var tc map[string]*template.Template
-	if app.UseCache {
+	if app.InProduction {
 		//Get the template cache from the AppConfig (Production Mode)
 		tc = app.TemplateCache
 	} else {
