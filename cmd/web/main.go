@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/alexedwards/scs/v2"
-	"github.com/okiprakasa/hello-world/pkg/config"
-	"github.com/okiprakasa/hello-world/pkg/handlers"
-	"github.com/okiprakasa/hello-world/pkg/render"
+	"github.com/okiprakasa/bookings/pkg/config"
+	"github.com/okiprakasa/bookings/pkg/handlers"
+	"github.com/okiprakasa/bookings/pkg/render"
 	"log"
 	"net/http"
 	"time"

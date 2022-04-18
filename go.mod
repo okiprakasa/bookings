@@ -1,4 +1,4 @@
-module github.com/okiprakasa/hello-world
+module github.com/okiprakasa/bookings
 
 go 1.18
 

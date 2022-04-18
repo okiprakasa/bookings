@@ -4,31 +4,22 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a03bb0d4-7b25-42cd-8584-55ecca713968" name="Changes" comment="Added NoSurf Middleware">
-      <change beforePath="$PROJECT_DIR$/.idea/hello-world.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hello-world.iml" afterDir="false" />
+    <list default="true" id="2acedbe4-896f-44f9-96ff-ccf7641908d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hello-world.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/middleware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/web/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/handlers/handlers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/render/render.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/render/render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.page.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.page.tmpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.page.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.page.tmpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
@@ -37,17 +28,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="27wtOF8WsRp2UIMfbHLsDC036Ko" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="27xDKoVbAD5Bq15RGTAcif9Dgth" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -57,27 +44,15 @@
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/matra"
+    "last_opened_file_path": "C:/Users/matra/GoProjects/bookings"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="hello-world" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <configuration name="go run ." type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="hello-world" />
+      <module name="bookings" />
       <working_directory value="$PROJECT_DIR$" />
-      <envs>
-        <env name="GoProjects" value="C:\Users\matra\GoProjects" />
-      </envs>
       <kind value="DIRECTORY" />
+      <package value="github.com/okiprakasa/bookings/cmd/web" />
       <directory value="$PROJECT_DIR$/cmd/web" />
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
@@ -97,10 +72,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added NoSurf Middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NoSurf Middleware" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

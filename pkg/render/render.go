@@ -3,8 +3,8 @@ package render
 import (
 	"bytes"
 	"fmt"
-	"github.com/okiprakasa/hello-world/models"
-	"github.com/okiprakasa/hello-world/pkg/config"
+	"github.com/okiprakasa/bookings/models"
+	"github.com/okiprakasa/bookings/pkg/config"
 	"html/template"
 	"log"
 	"net/http"
